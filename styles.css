@@ -534,7 +534,7 @@
  
  @media (max-width: 480px) {
    .hero-image {
-      transform: translateX(300px);
+      transform: translateX(150px);
    }
     body {
         padding-top: 120px; /* Ajustando para navbar em modo mobile */
