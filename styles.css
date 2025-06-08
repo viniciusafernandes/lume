@@ -476,7 +476,19 @@
     header .container {
         flex-direction: column;
     }
-   
+
+    .hero {
+      background: linear-gradient(to bottom,white 0%,white 10%,#0a1f2e 60%)
+    }
+
+    .hero-image {
+      display: none;
+    }
+
+    .bo {
+      display: none;
+    }
+
     nav ul {
         margin-top: 20px;
     }
@@ -537,6 +549,10 @@
         padding-top: 120px; /* Ajustando para navbar em modo mobile */
     }
     
+    header {
+      box-shadow: none !important;
+    }
+
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
