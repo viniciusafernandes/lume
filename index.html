@@ -199,7 +199,7 @@
     </div>
 
     <script>
-        // Script para rolagem suave nos links da navbar
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -208,30 +208,30 @@
                 const targetElement = document.querySelector(targetId);
                 
                 if (targetElement) {
-                    // Verifica se o navegador suporta scrollBehavior
+                    
                     if ('scrollBehavior' in document.documentElement.style) {
                         window.scrollTo({
                             top: targetElement.offsetTop - 80,
                             behavior: 'smooth'
                         });
                     } else {
-                        // Fallback para navegadores que não suportam scrollBehavior
+                        
                         window.scrollTo(0, targetElement.offsetTop - 80);
                     }
                 }
             });
         });
 
-        // Script para limpar o formulário e mostrar popup ao enviar
+        
         document.getElementById('btn-enviar').addEventListener('click', function() {
-            // Limpar todos os campos do formulário
+            
             document.getElementById('formulario-contato').reset();
             
-            // Mostrar o popup
+            
             const popup = document.getElementById('popup');
             popup.classList.add('show');
             
-            // Esconder o popup após 3 segundos
+            
             setTimeout(function() {
                 popup.classList.remove('show');
             }, 3000);

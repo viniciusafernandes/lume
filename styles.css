@@ -85,7 +85,7 @@ text-align: center;
 padding: 80px 0 120px;
 position: relative;
 overflow: hidden;
-/* Ajustando o margin-top para compensar a navbar fixa */
+
 margin-top: -20px;
 }
 .wave-top {
@@ -416,11 +416,11 @@ font-size: 18px;
 font-weight: bold;
 font-family: 'NEXT ART', sans-serif;
 }
-/* Adicionando rolagem suave para toda a página */
+
 html {
 scroll-behavior:smooth;
 }
-/* Responsividade - Melhorada para mobile */
+
 @media (max-width: 768px) {
 header .container {
 flex-direction: column;
@@ -466,7 +466,7 @@ flex-direction: column;
 flex-direction: column;
 gap: 15px;
 }
-/* Corrigindo o layout do formulário no mobile */
+
 .form-group.half {
 width: 100%;
 }
@@ -477,18 +477,18 @@ flex-direction: column;
 flex-direction: column;
 gap: 20px;
 }
-/* Corrigindo as listas no mobile */
+
 .footer-column ul {
 padding-left: 0;
 }
-/* Melhorando o footer no mobile */
+
 .footer-links {
-display: none; /* Ocultando as listas no mobile */
+display: none; 
 }
 }
 @media (max-width: 480px) {
 body {
-padding-top: 120px; /* Ajustando para navbar em modo mobile */
+padding-top: 120px; 
 }
 header {
 box-shadow: none !important;
@@ -506,14 +506,14 @@ font-size: 28px;
 .parceiro {
 flex-basis: 100%;
 }
-/* Melhorando o espaçamento no mobile */
+
 .form-group {
 margin-bottom: 15px;
 }
 .form-row {
 margin-bottom: 0;
 }
-/* Ajustando o footer para mobile */
+
 .footer-info {
 text-align: center;
 }
@@ -553,13 +553,13 @@ margin-top: 20px;
     align-items: center; /* Centraliza foto e texto */
     width: calc(33.33% - 40px); /* 3 colunas em telas grandes */
     position: relative;
-    text-align: center; /* Garante que o texto dentro seja centralizado */
-    margin-bottom: 0; /* Remove a margem inferior para o texto ficar mais próximo */
+    text-align: center; 
+    margin-bottom: 0; 
 }
 
-/* Implementação do efeito zigue-zague */
+
 .team-member:nth-child(even) {
-    margin-top: 100px; /* Desloca os membros pares para baixo */
+    margin-top: 100px; 
 }
 
 .member-photo {
@@ -567,8 +567,7 @@ margin-top: 20px;
     height: 180px;
     overflow: hidden;
     position: relative;
-    margin: 0 auto 10px auto; /* Espaço entre a foto e o nome */
-    /* Removendo o fundo cinza e a borda para se misturar ao fundo branco */
+    margin: 0 auto 10px auto; 
     border: none;
     background-color: transparent; 
 }
@@ -600,7 +599,7 @@ margin-top: 20px;
     color: #000;
     font-family: 'NEXT ART', sans-serif;
     font-size: 18px;
-    margin: 0; /* Remove margem extra */
+    margin: 0; 
 }
 
 .member-role {
@@ -608,17 +607,17 @@ margin-top: 20px;
     font-size: 14px;
     color: #554;
     font-family: 'Wix Madefor Display', sans-serif;
-    margin: 0; /* Remove margem extra */
+    margin: 0; 
     margin-top: -40px;
-    margin-bottom: 40px; /* Adiciona espaço abaixo do cargo para o próximo item */
+    margin-bottom: 40px; 
 }
 
 /* Responsividade da Equipe */
 @media (max-width: 1024px) {
     .team-member {
-        width: calc(50% - 40px); /* 2 colunas */
+        width: calc(50% - 40px); 
     }
-    /* Remove o zigue-zague para evitar quebras estranhas */
+  
     .team-member:nth-child(even) {
         margin-top: 0;
     }
